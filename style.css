@@ -1,0 +1,190 @@
+/*  RPG Base 76B3D7
+    http: //paletton.com/#uid=23u0u0kflNj0LRA14OAt+VMu+Um
+*/
+html, body{
+    height: 100%;
+}
+header{
+    height: 60px;
+    background-color: rgb(106, 198, 252);
+    border-bottom: 1px solid black;
+    align-items: center;
+    display: flex;
+    padding: 0px 10px 0px 10px;
+}
+header img#ifrs {
+    width: 40px;
+    height: 50px;
+}
+header img#sia {
+    width: 50px;
+    height: 50px;
+}
+div.separador_header {
+    height: 50px;
+    width: 2px;
+    margin: 30px;
+    background-color: gray;
+}
+#audio img:first-child{
+    z-index: 1;
+}
+#audio {
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+}
+#audio img{
+    position: absolute;
+}
+.audio_icone{
+    width: 20px;
+    height: 20px;
+}
+#container {
+    display: flex;
+}
+#tabela{
+    height: 100%;
+    padding: 10px;
+    overflow: auto;
+    margin: auto;
+}
+/* }
+#elementos_de_cima{
+    display: flex;
+    flex-direction: row;
+}
+#familia_3b,
+#familia_4b,
+#familia_5b
+{
+    display: flex;
+    justify-content: flex-end;
+}
+#hidrogenio,
+#familia_1a,
+#familia_2a,
+#familia_3b,
+#familia_4b,
+#familia_5b
+{
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+}
+#hidrogenio img,
+#familia_1a img,
+#familia_2a img,
+#familia_3b img,
+#familia_4b img,
+#familia_5b img
+{
+        width: 57px;
+        height: 69px;
+} */
+th:not(:first-child){
+    height: 10px;
+    border-left: 1px solid rgb(81, 137, 243);
+    border-right: 1px solid rgb(81, 137, 243);
+    font-weight: bolder;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+td.periodo{
+    width: 20px;
+    height: 10px;
+    font-weight: bolder;
+    font-size: 1.5em;
+    vertical-align: middle;
+    text-align: left;
+}
+div.gases{
+    background-color: rgb(108, 223, 108);
+}
+div.metal_alcalino{
+    background-color: rgb(255, 208, 0);
+}
+div.metal_alcalino_terroso{
+    background-color: rgb(255, 242, 168)
+}
+div.elemento{
+    padding: 2px;
+    border: 1px solid black;
+    font-size: 1.09em;
+    width: 66px;
+    height: 66px;
+}
+span.numero {
+    display: block;
+    font-weight: bold;
+    text-align: right;
+
+}
+strong.sigla{
+    font-weight: bolder;
+    font-size: 1.25em;
+}
+p.nome{
+    font-size: 0.8em;
+}
+p.massa {
+    text-align: right;
+    font-size: 0.8em;
+}
+div.legenda_elemento{
+    padding-left: 3px;
+    box-sizing: border-box;
+}
+span.legenda_numero{
+    display: block;
+    font-size: 1.1em
+}
+strong.legenda_sigla{
+    font-weight: bolder;
+    font-size: 1.25em;
+}
+td.legenda{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+}
+fieldset{
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    margin: 0px 10px;
+}
+legend
+{
+    text-align: center;
+    color: red;
+    font-size: 1.5em;
+}
+div#div_legenda {
+    display: flex;
+    justify-content: flex-end;
+}
+div.legenda_metal_alcalino{
+    width: 20px;
+    border: 1px solid black;
+    height: 20px;
+    margin-left: 5px;
+    background-color: rgb(255, 208, 0);
+}
+div#legenda_metal_alcalino{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+div.legenda_metal_alcalino_terroso{
+    width: 20px;
+    border: 1px solid black;
+    height: 20px;
+    margin-left: 5px;
+    background-color: rgb(255, 242, 168);
+}
+div#legenda_metal_alcalino_terroso {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
