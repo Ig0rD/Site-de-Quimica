@@ -1,0 +1,374 @@
+/*  RPG Base 76B3D7
+    http: //paletton.com/#uid=23u0u0kflNj0LRA14OAt+VMu+Um
+*/
+html, body{
+    height: 100%;
+}
+header img#ifrs {
+    width: 20px;
+    height: 30px;
+}
+header img#sia {
+    width: 30px;
+    height: 30px;
+}
+div.dropdown {
+    display: inline-block;
+    position: relative;
+    cursor: default;
+    padding: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    box-shadow: inset -0.5px -0.5px 10px 0.5px rgba(0, 0, 0, 0.15)
+}
+div.dropdown > span {
+    vertical-align: middle;
+}
+div.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 33.141px;
+    right: 0;
+    background-color: rgba(106, 198, 252, .5);
+    border: 1px solid rgba(81, 137, 243, .6);
+    box-shadow: 3px 3px 10px 0px rgba(0, 0, 0, 0.5);
+}
+div.dropdown-content > div {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.5em;
+    margin: 2px;
+    width: 110px;
+    transition-duration: 0.2s;
+    transition-delay: 0s;
+    transition-property: all;
+}
+div.dropdown-content > div:not(:first-child) {
+    border-top: 1px solid rgba(0,0,0,.2)
+}
+div.dropdown-content > div:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+    color: rgba(255, 255, 255, 0.7);
+}
+div.dropdown:hover div.dropdown-content {
+    display: block;
+}
+.dropupbtn {
+    padding: 14px;
+    cursor: default
+}
+.dropup {
+    position: relative;
+    display: inline-block;
+}
+.dropup-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 100px;
+    bottom: 23px;
+    z-index: 1;
+    right: 0;
+    border-radius: 10px
+}
+.dropup-content a {
+    color: black;
+    padding: 12px 10px;
+    text-decoration: underline;
+    text-align: right;
+    display: block;
+}
+.dropup-content a:hover {background-color: #ccc}
+.dropup:hover .dropup-content {
+    display: block;
+}
+
+div.separador_header {
+    height: 35px;
+    width: 1px;
+    background-color: rgba(1, 1, 1, 0.2);
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.05);
+    font-size: 0.7em;
+}
+#audio img:first-child{
+    z-index: 1;
+}
+#audio {
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+    position: absolute;
+    bottom: 0;
+}
+#audio img{
+    position: absolute;
+}
+.audio_icone{
+    width: 20px;
+    height: 20px;
+}
+#container {
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+}
+#tabela{
+    margin-left:auto;
+    margin-right:auto;
+    display: flex;
+    align-items: center;
+}
+div#emcima{
+    display: flex;
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    height: 60px;
+}
+div#divTabela {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    z-index: 0;
+}
+header {
+    background-color: rgb(106, 198, 252);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 10px 0px 10px;
+    box-shadow: inset 0px -5px 20px 0px rgba(0, 0, 0, 0.18), 0px 5px 10px rgba(0, 0, 0, 0.18);
+    width: 100%;
+    box-sizing: border-box;
+    position: absolute;
+    font-size: 0.8em;
+    height: 35px;
+}
+
+th{
+    height: 10px;
+    border-left: 1px solid rgb(81, 137, 243);
+    border-right: 1px solid rgb(81, 137, 243);
+    font-weight: bolder;
+    font-size: 0.7em;
+}
+div.nao_metal {
+    background-color: #4d05ac;
+}
+div.metal_alcalino {
+    background-color: #fac000;
+}
+div.semi_metal {
+    background-color: #8ac207;
+}
+div.metal_representativo {
+    background-color: #02aecc;
+}
+div.lantanideos {
+    background-color: #4539b1;
+}
+div.gas_nobre {
+    background-color: #6f00ff;
+}
+div.metal_alcalino_terroso {
+    background-color: #a39905;
+}
+div.halogenio{
+    background-color: #c107c7;
+}
+div.metal_de_transicao{
+    background-color: #b30119;
+}
+div.actinideos{
+    background-color: #05817b;
+
+}
+div#legenda {
+    margin-top: 5px;
+    margin-right: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    background-color: rgba(106, 198, 252, .5);
+    font-size: 0.9em;
+    box-shadow: inset 0px -5px 20px 0px rgba(0, 0, 0, 0.18), 10px 5px 20px rgba(0, 0, 0, 0.18);
+    padding: 2px;
+    cursor: default;
+}
+div.legenda_destaque:not(:first-child) {
+    margin-top: 5px;
+}
+div.legenda_destaque {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.2s ease;
+}
+div.elemento_legenda{
+    width: 20px;
+    height: 20px;
+    border: 1px solid black;
+    border-radius: 5px;
+    box-shadow: inset 0px -5px 20px 0px rgba(0, 0, 0, 0.18), 0px 5px 10px rgba(0, 0, 0, 0.18);
+}
+div.elemento{
+    width: 50px;
+    height: 50px;
+    box-sizing: border-box;
+    text-align: center;
+    color: white;
+    margin: 0.4px;
+    border-radius: 10px;
+    padding: 0.5px;
+    box-shadow: inset 0px -5px 20px 0px rgba(0, 0, 0, 0.18), 0px 5px 10px rgba(0, 0, 0, 0.18);
+    z-index: 0;
+    cursor: pointer;
+}
+.selecionado {
+    border-top: 2px dashed red;
+    border-left: 2px dashed red;
+    border-right: 2px dashed red;
+    border-bottom: 1px dashed red
+}
+td.MTI {
+    text-align: center;
+    vertical-align: middle;
+    font-size: 0.8em;
+    font-weight: bold;
+    text-decoration: underline
+}
+span.numero {
+    display: block;
+    font-size: 0.7em;
+    font-weight: bold
+}
+strong.sigla {
+    font-weight: bolder;
+    font-size: 0.9em;
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5)
+}
+p.nome{
+    font-size: 0.6em;
+    margin: 2px 0px;
+}
+p.massa {
+    font-size: 0.6em;
+    color: white;
+}
+div#div_legenda {
+    display: flex;
+    justify-content: flex-end;
+}
+div.elemento.lantanideos {
+    margin-top: 5px;
+}
+footer {
+    background-color: rgb(106, 198, 252);
+    height: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:3px 10px;
+    box-shadow: inset 0px 10px 15px 0px rgba(0, 0, 0, 0.18), 0px -3px 10px rgba(0, 0, 0, 0.18);
+    position: absolute;
+    bottom: 0px;
+    box-sizing: border-box;
+    font-size: 0.6em
+}
+div#names {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: underline;
+}
+div#names a {
+    color: black;
+}
+aside {
+    background-color: rgba(106, 198, 252, 0.7);
+    box-shadow: inset 0px 0px 15px 5px rgba(0, 0, 0, 0.15), 10px 5px 20px rgba(0, 0, 0, 0.28);
+    padding: 4px;
+    box-sizing: border-box;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    height: 120px;
+    width: 190px;
+    margin-right: 10px;
+    transition: all 0.2s ease-in;
+}
+aside h1 {
+    font-size: 0.9em;
+    text-decoration: underline;
+    margin-bottom: 3px;
+    text-align: center;
+}
+aside div {
+    display: flex;
+    flex-direction: row;
+    font-size: 0.8em;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 5px 0px;
+}
+aside div p {
+    font-size: 0.9em;
+}
+aside div span{
+    font-size: 0.8em;
+    text-decoration: underline;
+}
+td {
+    border: 2px solid rgba(0, 0, 0, 0);
+}
+.destaque {
+    border: 1.6px solid rgba(0, 0, 0, 0);
+}
+div.sc {
+    transform: translate3d(-30px, -20px, 0);
+    transition-delay: 0.1s;
+    transition-duration: 0.2s;
+    transition-property: all;
+    transform: scale(2.5);
+    z-index: 1;
+}
+div.invisivel {
+    transition: 0.3s;
+    opacity: 0.2;
+}
+aside:hover {
+    transition: 0.2s all 1s ease-in;
+    transform: scale(1.3) translate(-21.3px, -8.5px);
+}
+.elemento:hover{
+    transform: translate3d(6px, -6px, 0);
+    transition-delay: 0.3s;
+    transition-duration: 0.2s;
+    transition-property: all;
+    transition-timing-function: ease;
+    transform: scale(2);
+    z-index: 1;
+}
+.legenda_destaque:hover {
+    z-index: 1;
+    padding: 1px;
+    transform: translate3d(4px, -3px, 0);
+    border: 1px solid rgba(65, 110, 194, 0.4);
+    transition: all 0.2s ease;
+    box-shadow: rgba(65, 110, 194, 0.6) -1px 1px,
+                rgba(65, 110, 194, 0.6) -2px 2px,
+                rgba(65, 110, 194, 0.6) -3px 3px;
+}
+.overlay {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 2;
+    cursor: pointer;
+}
